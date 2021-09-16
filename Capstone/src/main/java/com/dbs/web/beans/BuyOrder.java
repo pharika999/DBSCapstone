@@ -19,7 +19,7 @@ public class BuyOrder {
 	@OneToOne
 	@JoinColumn(name="clientid")
 	private Client clientid;
-	private boolean status;
+	private String status;
 	private int quanity;
 	private int remainingquantity;
 	private int price;
@@ -49,11 +49,11 @@ public class BuyOrder {
 		this.clientid = clientid;
 	}
 
-	public boolean isStatus() {
+	public String isStatus() {
 		return status;
 	}
 
-	public void setStatus(boolean status) {
+	public void setStatus(String status) {
 		this.status = status;
 	}
 
